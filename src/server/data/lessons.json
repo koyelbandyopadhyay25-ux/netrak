@@ -1,0 +1,442 @@
+[
+  {
+    "id": "LES-001",
+    "topic": "phishing",
+    "title": "Spotting Phishing Red Flags in 30 Seconds",
+    "estimatedSeconds": 30,
+    "description": "Learn the 3 instant indicators of email credential traps.",
+    "learningPoints": [
+      "Check full sender email domain, not just the display name.",
+      "Hover over links to verify actual destination URL before clicking.",
+      "Be wary of manufactured urgency (e.g. 'account suspended in 15 mins')."
+    ],
+    "question": "An email from 'IT Support <support@secure-update-corp.com>' asks you to verify your password immediately to prevent account termination. What is the safest response?",
+    "options": [
+      "Click the link and quickly verify credentials.",
+      "Reply asking if the email is legitimate.",
+      "Do not click anything; report the email as phishing immediately.",
+      "Forward the email to all coworkers to warn them."
+    ],
+    "correctAnswer": "Do not click anything; report the email as phishing immediately.",
+    "explanation": "IT never asks you to verify credentials via external links. Immediate reporting alerts the security team to quarantine the email enterprise-wide.",
+    "policyReference": "POL-003 (Phishing Identification)"
+  },
+  {
+    "id": "LES-002",
+    "topic": "password security",
+    "title": "Password Vaults vs Plaintext Habits",
+    "estimatedSeconds": 30,
+    "description": "Why password managers beat memory and sticky notes every time.",
+    "learningPoints": [
+      "Reusing credentials across personal and work sites creates domino compromise.",
+      "Enterprise vaults generate 16+ character unique cryptographic passwords.",
+      "Never store passwords in notes, browser autofill, or spreadsheet files."
+    ],
+    "question": "Where should your corporate passwords be securely stored?",
+    "options": [
+      "In a password-protected Excel spreadsheet on your desktop.",
+      "In the approved enterprise password manager.",
+      "In your personal browser's built-in autofill tool.",
+      "On a handwritten note under your keyboard."
+    ],
+    "correctAnswer": "In the approved enterprise password manager.",
+    "explanation": "Enterprise vaults provide encrypted, auditable storage that resists browser-based infostealer malware.",
+    "policyReference": "POL-001 (Password Standards)"
+  },
+  {
+    "id": "LES-003",
+    "topic": "MFA",
+    "title": "Defeating MFA Fatigue Attacks",
+    "estimatedSeconds": 30,
+    "description": "How to protect your second factor when flooded with prompts.",
+    "learningPoints": [
+      "Attackers trigger repeated push notifications hoping you tap 'Approve' to stop the noise.",
+      "Never approve any push notification you did not immediately initiate.",
+      "Report spontaneous MFA floods to the SOC immediately."
+    ],
+    "question": "At 2:00 AM you receive three consecutive MFA approval notifications on your phone that you did not initiate. What should you do?",
+    "options": [
+      "Tap 'Approve' so the notifications stop buzzing.",
+      "Ignore it and go back to sleep.",
+      "Tap 'Deny' on all prompts and immediately alert Security via NETRAK.",
+      "Turn off your phone's Wi-Fi."
+    ],
+    "correctAnswer": "Tap 'Deny' on all prompts and immediately alert Security via NETRAK.",
+    "explanation": "An attacker with your password is attempting to push past your MFA. Denying and reporting prompts an immediate credential reset.",
+    "policyReference": "POL-014 (Multi-Factor Authentication)"
+  },
+  {
+    "id": "LES-004",
+    "topic": "data sharing",
+    "title": "External File Sharing & Public Links",
+    "estimatedSeconds": 30,
+    "description": "How anonymous links leak proprietary enterprise data.",
+    "learningPoints": [
+      "Public 'anyone with link' shares can be indexed or forwarded indefinitely.",
+      "Always restrict shares to specified email addresses with expiration dates.",
+      "Default to 'View Only' permissions unless editing is strictly necessary."
+    ],
+    "question": "You need to share a presentation draft with an external marketing contractor. How should you share it?",
+    "options": [
+      "Create a public link with 'Anyone on the internet can view'.",
+      "Upload it to your personal Dropbox and text them the link.",
+      "Share from corporate cloud directly to their business email with an expiration date.",
+      "Email the file as an unencrypted ZIP attachment from your personal Gmail."
+    ],
+    "correctAnswer": "Share from corporate cloud directly to their business email with an expiration date.",
+    "explanation": "Direct recipient authentication and link expiry maintain access auditing and prevent runaway dissemination.",
+    "policyReference": "POL-005 (External File Sharing)"
+  },
+  {
+    "id": "LES-005",
+    "topic": "AI security",
+    "title": "Safely Navigating Public Generative AI Tools",
+    "estimatedSeconds": 30,
+    "description": "Protecting customer data and proprietary source code from LLM ingestion.",
+    "learningPoints": [
+      "Public AI tools may ingest prompts into model training or persistent logs.",
+      "Never paste customer PII, confidential contracts, or internal code into free AI tools.",
+      "Use only corporate-approved AI platforms with enterprise zero-retention agreements."
+    ],
+    "question": "Can you paste a customer database export into a free public AI tool to generate an executive summary?",
+    "options": [
+      "Yes, as long as you delete the chat history afterwards.",
+      "No, pasting customer data into public AI services violates company privacy and data policies.",
+      "Yes, because public AI platforms encrypt all user inputs.",
+      "Yes, if you only paste 100 rows at a time."
+    ],
+    "correctAnswer": "No, pasting customer data into public AI services violates company privacy and data policies.",
+    "explanation": "Public AI tools lack corporate confidentiality guarantees and data deletion verification. Use enterprise-approved AI tools only.",
+    "policyReference": "POL-019 (AI Tool Usage)"
+  },
+  {
+    "id": "LES-006",
+    "topic": "cloud security",
+    "title": "Company Data Belongs in Corporate Cloud Tenants",
+    "estimatedSeconds": 30,
+    "description": "The hidden risks of personal Google Drive and Dropbox syncing.",
+    "learningPoints": [
+      "Personal cloud accounts bypass enterprise monitoring and discovery compliance.",
+      "If personal accounts are compromised, corporate data is exposed without IT awareness.",
+      "Keep work files strictly inside authenticated company tenants."
+    ],
+    "question": "Why is syncing work files to a personal Google Drive account prohibited?",
+    "options": [
+      "Personal Google Drive accounts run slower than enterprise servers.",
+      "It circumvents corporate data protection, monitoring, and legal compliance holds.",
+      "Google does not allow business files on personal tiers.",
+      "It fills up your personal storage too quickly."
+    ],
+    "correctAnswer": "It circumvents corporate data protection, monitoring, and legal compliance holds.",
+    "explanation": "Corporate Data Loss Prevention and access control cannot govern files once moved to unmanaged personal clouds.",
+    "policyReference": "POL-006 (Cloud Storage)"
+  },
+  {
+    "id": "LES-007",
+    "topic": "email",
+    "title": "Executive Impersonation (CEO Fraud & BEC)",
+    "estimatedSeconds": 30,
+    "description": "Detecting high-urgency executive spoofing requests.",
+    "learningPoints": [
+      "Attackers pretend to be executives in meetings needing urgent gift cards or wire transfers.",
+      "Verify unexpected financial or credential requests via out-of-band phone calls.",
+      "Legitimate executives never request iTunes/Amazon cards for vendor payments."
+    ],
+    "question": "You get an urgent email from your CEO: 'I am in a board meeting, buy ten $100 gift cards right now and email the codes.' What should you do?",
+    "options": [
+      "Purchase the gift cards immediately to avoid upsetting the CEO.",
+      "Reply to the email asking for confirmation.",
+      "Recognize the classic gift card scam, do not buy cards, and report the email.",
+      "Call an external store to verify gift card availability."
+    ],
+    "correctAnswer": "Recognize the classic gift card scam, do not buy cards, and report the email.",
+    "explanation": "Gift card demands are universally fraudulent Business Email Compromise tactics designed for untraceable financial extraction.",
+    "policyReference": "POL-002 (Email Security)"
+  },
+  {
+    "id": "LES-008",
+    "topic": "USB",
+    "title": "The Dangers of Found Flash Drives",
+    "estimatedSeconds": 30,
+    "description": "Why you should never plug an unknown thumb drive into your PC.",
+    "learningPoints": [
+      "Attackers drop 'bait' USB drives labeled 'Confidential Salaries' in parking lots and lobbies.",
+      "Plugging in a malicious drive can execute HID keystroke injectors (Rubber Ducky).",
+      "Hand all found or unknown media directly to IT Security."
+    ],
+    "question": "You spot a 64GB USB drive labeled 'Executive Bonuses Q3' in the cafeteria. What should you do?",
+    "options": [
+      "Plug it in to find the owner's resume or contact info.",
+      "Format the drive so you can reuse it safely.",
+      "Leave it untouched and alert IT Security or deliver it to the Security Desk.",
+      "Plug it into your personal laptop instead of your work PC."
+    ],
+    "correctAnswer": "Leave it untouched and alert IT Security or deliver it to the Security Desk.",
+    "explanation": "Malicious USB hardware can emulate keyboards to execute shell scripts in fractions of a second upon insertion.",
+    "policyReference": "POL-007 (USB Devices)"
+  },
+  {
+    "id": "LES-009",
+    "topic": "software",
+    "title": "Shadow IT & Free Online Utilities",
+    "estimatedSeconds": 30,
+    "description": "Why unvetted browser extensions and converters pose serious risks.",
+    "learningPoints": [
+      "Free web converters often store uploaded documents permanently on third-party servers.",
+      "Browser extensions can inspect and modify sensitive DOM data.",
+      "Install only tools available in the enterprise managed software portal."
+    ],
+    "question": "You need to convert a confidential PDF to Word. Which approach complies with corporate policy?",
+    "options": [
+      "Upload it to a free online PDF converter found on Google.",
+      "Install an unverified Chrome extension with 5-star reviews.",
+      "Use Adobe Acrobat Pro already licensed and deployed through the Corporate App Portal.",
+      "Send it to a free Discord bot to convert."
+    ],
+    "correctAnswer": "Use Adobe Acrobat Pro already licensed and deployed through the Corporate App Portal.",
+    "explanation": "Corporate software is vetted for data handling compliance; free web converters harvest uploaded confidential content.",
+    "policyReference": "POL-008 (Software Installation)"
+  },
+  {
+    "id": "LES-010",
+    "topic": "public Wi-Fi",
+    "title": "Public Wi-Fi Hygiene: Always Tunnel",
+    "estimatedSeconds": 30,
+    "description": "How to stay secure when working from airports, cafes, and hotels.",
+    "learningPoints": [
+      "Unencrypted open networks allow local eavesdropping and man-in-the-middle attacks.",
+      "Rogue hotspots can spoof hotel or airport network names.",
+      "Always engage the corporate VPN before accessing work systems."
+    ],
+    "question": "You connect to 'Airport_Free_WiFi' while traveling. What is your required next step?",
+    "options": [
+      "Immediately open company email in incognito mode.",
+      "Connect to the corporate VPN before accessing any work tools.",
+      "Turn off your firewall to speed up the connection.",
+      "Browse only HTTP websites."
+    ],
+    "correctAnswer": "Connect to the corporate VPN before accessing any work tools.",
+    "explanation": "The corporate VPN encrypts all network packets from your laptop to corporate gateways, defeating local packet sniffing.",
+    "policyReference": "POL-009 (Public Wi-Fi)"
+  },
+  {
+    "id": "LES-011",
+    "topic": "remote work",
+    "title": "Protecting Corporate Hardware at Home",
+    "estimatedSeconds": 30,
+    "description": "Physical security best practices outside the corporate office.",
+    "learningPoints": [
+      "Lock your screen every time you step away, even at home.",
+      "Never allow family members or roommates to use corporate machines.",
+      "Secure home Wi-Fi with strong WPA3/WPA2 passwords."
+    ],
+    "question": "Your roommate asks to borrow your company laptop for 10 minutes to print a boarding pass. What should you do?",
+    "options": [
+      "Let them use it as long as you watch them.",
+      "Politely decline; corporate devices may only be operated by authorized employees.",
+      "Create a guest account on your work laptop for them.",
+      "Let them use it if you log out of Slack."
+    ],
+    "correctAnswer": "Politely decline; corporate devices may only be operated by authorized employees.",
+    "explanation": "Permitting third-party access violates non-disclosure and endpoint compliance agreements.",
+    "policyReference": "POL-010 (Remote Work)"
+  },
+  {
+    "id": "LES-012",
+    "topic": "mobile security",
+    "title": "Mobile Device Security & MDM Profiles",
+    "estimatedSeconds": 30,
+    "description": "Safeguarding company data on mobile devices.",
+    "learningPoints": [
+      "Enroll in corporate MDM to enable containerized work profiles.",
+      "Never root or jailbreak a device that accesses corporate email.",
+      "Keep OS and apps updated to patch known mobile exploits."
+    ],
+    "question": "Why are rooted or jailbroken smartphones banned from connecting to enterprise networks?",
+    "options": [
+      "They consume too much cellular data.",
+      "Bypassing OS sandboxing allows malicious apps to intercept encrypted corporate secrets.",
+      "They cannot run company wallpapers.",
+      "They disable Bluetooth connectivity."
+    ],
+    "correctAnswer": "Bypassing OS sandboxing allows malicious apps to intercept encrypted corporate secrets.",
+    "explanation": "Jailbreaking strips foundational security barriers that isolate business applications from malware.",
+    "policyReference": "POL-017 (Mobile Security)"
+  },
+  {
+    "id": "LES-013",
+    "topic": "social engineering",
+    "title": "Defeating Vishing & Phone Pretexting",
+    "estimatedSeconds": 30,
+    "description": "How to handle callers demanding internal employee info or credentials.",
+    "learningPoints": [
+      "Attackers use urgency and caller ID spoofing to sound authoritative.",
+      "Never provide passwords, OTPs, or employee lists over the telephone.",
+      "Verify requester identity by hanging up and calling verified internal extensions."
+    ],
+    "question": "A caller claims to be an auditor and requests the home address and payroll ID of three colleagues. What should you do?",
+    "options": [
+      "Read out the information since they sound professional.",
+      "Refuse to provide personal employee data and report the vishing call to Security.",
+      "Ask them to send a screenshot of their badge before sharing.",
+      "Transfer the call to a junior colleague."
+    ],
+    "correctAnswer": "Refuse to provide personal employee data and report the vishing call to Security.",
+    "explanation": "PII and employee data cannot be disclosed over the phone without verified identity and legal authorization.",
+    "policyReference": "POL-013 (Social Engineering)"
+  },
+  {
+    "id": "LES-014",
+    "topic": "incident response",
+    "title": "The First 15 Minutes of a Suspected Breach",
+    "estimatedSeconds": 30,
+    "description": "Decisive steps to minimize damage when an accident happens.",
+    "learningPoints": [
+      "Disconnect your device from Wi-Fi and wired network immediately.",
+      "Do NOT try to cover up mistakes; early reporting prevents widespread compromise.",
+      "Report the incident through NETRAK or the 24/7 Security Hotline."
+    ],
+    "question": "You clicked an email link and typed your corporate password before realizing the site looked fake. What is your priority action?",
+    "options": [
+      "Delete the email and pretend it did not happen.",
+      "Disconnect from the network and report the incident immediately in NETRAK.",
+      "Wait 24 hours to see if any strange logins occur.",
+      "Restart your laptop three times."
+    ],
+    "correctAnswer": "Disconnect from the network and report the incident immediately in NETRAK.",
+    "explanation": "Disconnecting halts active remote access while rapid reporting allows the SOC to revoke stolen sessions immediately.",
+    "policyReference": "POL-011 (Incident Reporting)"
+  },
+  {
+    "id": "LES-015",
+    "topic": "source code security",
+    "title": "Keeping Secrets Out of Public Git Repositories",
+    "estimatedSeconds": 30,
+    "description": "How automated scanners scrape API keys within seconds of public commits.",
+    "learningPoints": [
+      "Never hardcode secrets, private keys, or credentials into repository commits.",
+      "Use environment variables (.env) and secret vaults.",
+      "Keep all corporate repositories private under the enterprise organization."
+    ],
+    "question": "You are writing a script that calls a cloud database. Where should the database password be stored?",
+    "options": [
+      "Hardcoded as a string directly in main.ts.",
+      "In an unencrypted README file in the repository.",
+      "In a secure environment variable injected at runtime and excluded via .gitignore.",
+      "In the public commit message."
+    ],
+    "correctAnswer": "In a secure environment variable injected at runtime and excluded via .gitignore.",
+    "explanation": "Runtime environment injection keeps credentials out of version control and prevents public leakage.",
+    "policyReference": "POL-024 (Source Code Security)"
+  },
+  {
+    "id": "LES-016",
+    "topic": "secrets",
+    "title": "What to Do When an API Key Is Committed",
+    "estimatedSeconds": 30,
+    "description": "Emergency triage for exposed credentials.",
+    "learningPoints": [
+      "Simply deleting the file in a new commit leaves the secret in Git history.",
+      "Immediately rotate and invalidate the key in the cloud provider console.",
+      "Report the incident so Security can audit access logs during the exposure window."
+    ],
+    "question": "You pushed a commit containing an active production API key to GitHub. What is the most critical first step?",
+    "options": [
+      "Push a second commit deleting the file.",
+      "Immediately revoke and rotate the API key in the provider console.",
+      "Make the repository private and do nothing else.",
+      "Wait until Monday to discuss it with your team."
+    ],
+    "correctAnswer": "Immediately revoke and rotate the API key in the provider console.",
+    "explanation": "Rotating the key invalidates the secret immediately, neutralizing any bots that harvested the key from Git history.",
+    "policyReference": "POL-028 (Secrets Management)"
+  },
+  {
+    "id": "LES-017",
+    "topic": "privacy",
+    "title": "Handling Personally Identifiable Information (PII)",
+    "estimatedSeconds": 30,
+    "description": "Complying with privacy mandates when handling customer records.",
+    "learningPoints": [
+      "PII includes government IDs, health records, home addresses, and credit cards.",
+      "Only access PII on a strict business need-to-know basis.",
+      "Never export production PII into unencrypted spreadsheets."
+    ],
+    "question": "A product manager asks you for a CSV dump of all customer home addresses and phone numbers to test a map feature. What should you provide?",
+    "options": [
+      "An unencrypted production database dump via Slack.",
+      "Anonymized synthetic test data that contains no real customer identities.",
+      "A copy of the production database uploaded to Google Sheets.",
+      "The database credentials so they can query it directly."
+    ],
+    "correctAnswer": "Anonymized synthetic test data that contains no real customer identities.",
+    "explanation": "Synthetic mock data fulfills testing requirements without exposing real customer privacy to unauthorized environments.",
+    "policyReference": "POL-018 (Data Privacy) & POL-026"
+  },
+  {
+    "id": "LES-018",
+    "topic": "physical security",
+    "title": "Tailgating & Perimeter Awareness",
+    "estimatedSeconds": 30,
+    "description": "Preventing unauthorized individuals from slipping through access doors.",
+    "learningPoints": [
+      "Tailgating occurs when someone follows an authorized employee through a badge door.",
+      "Always ensure the door closes securely behind you.",
+      "Politely request that visitors badge in or escort them to reception."
+    ],
+    "question": "A person holding coffee cups smiles and asks you to hold the secure office door open for them. What is the proper response?",
+    "options": [
+      "Hold the door open to be polite and avoid conflict.",
+      "Politely inform them that company policy requires everyone to badge in, or direct them to reception.",
+      "Let them in if they are wearing business attire.",
+      "Give them your badge to swipe."
+    ],
+    "correctAnswer": "Politely inform them that company policy requires everyone to badge in, or direct them to reception.",
+    "explanation": "Polite firmness prevents social engineering intruders from bypassing electronic access logging.",
+    "policyReference": "POL-022 (Physical Security)"
+  },
+  {
+    "id": "LES-019",
+    "topic": "travel security",
+    "title": "High-Risk International Travel Protocols",
+    "estimatedSeconds": 30,
+    "description": "Protecting digital devices when crossing international borders.",
+    "learningPoints": [
+      "Notify IT Security 14 days before international business travel.",
+      "Use clean loaner travel hardware in high-risk foreign jurisdictions.",
+      "Never leave laptops unattended in foreign hotel rooms."
+    ],
+    "question": "Why does IT Security issue loaner laptops for international travel to high-risk destinations?",
+    "options": [
+      "To save airline baggage weight fees.",
+      "To ensure that primary production laptops containing proprietary IP are not seized or covertly cloned.",
+      "Because foreign electrical outlets destroy corporate batteries.",
+      "Loaner laptops are disposable."
+    ],
+    "correctAnswer": "To ensure that primary production laptops containing proprietary IP are not seized or covertly cloned.",
+    "explanation": "Loaner devices contain minimal data and can be wiped completely upon return, eliminating persistent firmware implants.",
+    "policyReference": "POL-033 (Travel Security)"
+  },
+  {
+    "id": "LES-020",
+    "topic": "collaboration security",
+    "title": "Securing Slack, Teams, & Digital Whiteboards",
+    "estimatedSeconds": 30,
+    "description": "Avoiding accidental public disclosure in collaboration tools.",
+    "learningPoints": [
+      "Ensure digital whiteboards (Miro, Figma) require organizational login.",
+      "Do not conduct business transactions in unapproved consumer apps like WhatsApp.",
+      "Periodically review guest channel memberships."
+    ],
+    "question": "Can you invite external contractors to a public enterprise Slack channel where internal company roadmap discussions take place?",
+    "options": [
+      "Yes, all channels are open to anyone with an invite.",
+      "No, external guests must only be added to dedicated single-channel guest spaces with approved scope.",
+      "Yes, if they promise not to read confidential messages.",
+      "Yes, Slack automatically hides confidential messages from guests."
+    ],
+    "correctAnswer": "No, external guests must only be added to dedicated single-channel guest spaces with approved scope.",
+    "explanation": "Unrestricted channel access gives third-party contractors visibility into unrelated proprietary business deliberations.",
+    "policyReference": "POL-037 (Collaboration Platforms)"
+  }
+]

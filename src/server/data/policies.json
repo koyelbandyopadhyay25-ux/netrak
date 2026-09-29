@@ -1,0 +1,362 @@
+[
+  {
+    "id": "POL-001",
+    "topic": "Password Security",
+    "title": "Corporate Password Standards & Vault Usage",
+    "section": "Sec 2.1",
+    "rule": "All corporate passwords must be at least 14 characters, unique, and stored in the approved enterprise password manager. Password sharing, credential writing in plaintext, or reusing work passwords on external/personal accounts is strictly prohibited.",
+    "explanation": "Password reuse and plaintext storage represent a top entry point for credential stuffing attacks. Enterprise password managers generate and protect strong unique secrets.",
+    "keywords": ["password", "reuse", "share", "credentials", "length", "manager", "vault", "plaintext", "login"]
+  },
+  {
+    "id": "POL-002",
+    "topic": "Email Security",
+    "title": "External Inbound Verification & Suspicious Links",
+    "section": "Sec 3.2",
+    "rule": "Employees must inspect external sender email addresses, avoid clicking unsolicited links or attachments, and verify high-value requests (wire transfers, credential verification, gift cards) via an out-of-band communication channel before taking action.",
+    "explanation": "Attackers frequently spoof display names to mimic executives or vendors. Verification prevents business email compromise (BEC).",
+    "keywords": ["email", "inbound", "suspicious", "sender", "attachment", "urgent", "gift card", "wire", "spoof", "verify"]
+  },
+  {
+    "id": "POL-003",
+    "topic": "Phishing",
+    "title": "Phishing Identification and Immediate Reporting",
+    "section": "Sec 3.4",
+    "rule": "Any email attempting to coerce urgent credential entry, financial transfers, or software installation must be reported immediately using the 'Report Phish' button or NETRAK incident portal without forwarding to colleagues.",
+    "explanation": "Forwarding phishing emails internally spreads the threat. Immediate reporting alerts the security operations team to neutralize enterprise-wide delivery.",
+    "keywords": ["phishing", "fake link", "urgent", "credential harvesting", "phish", "report", "suspicious email", "quarantine"]
+  },
+  {
+    "id": "POL-004",
+    "topic": "Data Classification",
+    "title": "Four-Tier Information Classification Framework",
+    "section": "Sec 4.1",
+    "rule": "Company data must be classified as Public, Internal, Confidential, or Restricted. Confidential and Restricted data requires encryption at rest and in transit, strict need-to-know access, and cannot be exported to unauthorized systems.",
+    "explanation": "Proper classification governs how data is labeled, handled, encrypted, and stored across its entire lifecycle.",
+    "keywords": ["classification", "confidential", "restricted", "public", "internal", "tier", "labeling", "sensitive"]
+  },
+  {
+    "id": "POL-005",
+    "topic": "External File Sharing",
+    "title": "Authorized External Collaboration & Sharing Controls",
+    "section": "Sec 4.3",
+    "rule": "Sharing company files with external third parties is only permitted through authorized corporate file repositories with specified recipient authentication, view-only defaults, and expiration dates. Creating public 'anyone with the link' shares is strictly forbidden.",
+    "explanation": "Anonymous and unexpired sharing links create permanent open doorways to proprietary corporate assets.",
+    "keywords": ["external sharing", "share link", "public link", "dropbox", "google drive", "anonymous", "permission", "file sharing"]
+  },
+  {
+    "id": "POL-006",
+    "topic": "Cloud Storage",
+    "title": "Corporate vs Personal Cloud Storage Restrictions",
+    "section": "Sec 4.5",
+    "rule": "Company documents, databases, customer data, and source code may only be stored on approved corporate tenant cloud services. Uploading company material to personal Google Drive, Dropbox, iCloud, or personal cloud storage accounts is a severe policy violation.",
+    "explanation": "Personal cloud accounts bypass enterprise data loss prevention (DLP), access governance, auditing, and discovery legal holds.",
+    "keywords": ["cloud", "personal drive", "dropbox", "icloud", "onedrive", "backup", "sync", "upload", "storage"]
+  },
+  {
+    "id": "POL-007",
+    "topic": "USB Devices",
+    "title": "Removable Media & USB Usage Restrictions",
+    "section": "Sec 5.1",
+    "rule": "Connecting unencrypted personal USB thumb drives, external hard drives, or found flash media to corporate workstations is prohibited. Endpoint ports are monitored; hardware encryption and IT authorization are required for business-justified removable media.",
+    "explanation": "Found or personal USB drives frequently host malicious payload autoruns and bypass perimeter network inspections.",
+    "keywords": ["usb", "thumb drive", "flash drive", "pendrive", "external hard drive", "removable media", "plug", "found usb"]
+  },
+  {
+    "id": "POL-008",
+    "topic": "Software Installation",
+    "title": "Authorized Software Catalog & Admin Privilege Restrictions",
+    "section": "Sec 5.3",
+    "rule": "Employees may only install software sourced from the managed Corporate App Portal. Running unauthorized executables, cracked utilities, unapproved browser extensions, or free online converters without InfoSec vetting is prohibited.",
+    "explanation": "Unvetted freeware and browser extensions often bundle spyware, cryptominers, or silently harvest session cookies.",
+    "keywords": ["software", "install", "download", "application", "executable", "admin rights", "converter", "freeware", "extension"]
+  },
+  {
+    "id": "POL-009",
+    "topic": "Public Wi-Fi",
+    "title": "Public & Untrusted Wireless Network Usage",
+    "section": "Sec 6.1",
+    "rule": "When connecting to public or unencrypted Wi-Fi (such as airports, hotels, and cafes), employees must immediately initiate the corporate Virtual Private Network (VPN) before accessing any company email, cloud services, or internal systems.",
+    "explanation": "Open wireless networks expose unencrypted packets to rogue access points, man-in-the-middle interception, and DNS spoofing.",
+    "keywords": ["public wifi", "airport wifi", "hotel wifi", "cafe", "open wifi", "vpn", "untrusted network", "wireless"]
+  },
+  {
+    "id": "POL-010",
+    "topic": "Remote Work",
+    "title": "Secure Telework & Screen Privacy Protocols",
+    "section": "Sec 6.3",
+    "rule": "Remote workers must lock screens when stepping away, avoid working in view of unauthorized individuals in public venues, never permit family or friends to use corporate hardware, and ensure home Wi-Fi is protected with WPA3/WPA2-AES encryption.",
+    "explanation": "Physical and shoulder-surfing security remains mandatory regardless of physical work location.",
+    "keywords": ["remote work", "telework", "work from home", "shoulder surfing", "family member", "lock screen", "laptop unattended"]
+  },
+  {
+    "id": "POL-011",
+    "topic": "Incident Reporting",
+    "title": "Mandatory Immediate Incident Escalation",
+    "section": "Sec 1.2",
+    "rule": "Any suspected breach, clicked phishing link with credential entry, unauthorized data exposure, lost corporate device, or unusual system behavior must be reported within 60 minutes via NETRAK or the Security Operations Hotline.",
+    "explanation": "Rapid incident reporting minimizes attacker dwell time and allows immediate token revocation and host containment.",
+    "keywords": ["incident", "report", "breach", "escalation", "clicked link", "entered password", "compromise", "urgent"]
+  },
+  {
+    "id": "POL-012",
+    "topic": "Acceptable Use",
+    "title": "Corporate Asset Acceptable Use Standard",
+    "section": "Sec 1.1",
+    "rule": "Corporate IT equipment, credentials, and digital assets are provided for business operations. Minor incidental personal use is tolerated only if it poses zero security risk, consumes no significant resources, and violates no legal or ethical guidelines.",
+    "explanation": "Clear boundaries protect organization liability while preserving system performance and availability.",
+    "keywords": ["acceptable use", "personal use", "work computer", "policy", "guidelines", "ethics"]
+  },
+  {
+    "id": "POL-013",
+    "topic": "Social Engineering",
+    "title": "Pretexting, Vishing, & Impersonation Countermeasures",
+    "section": "Sec 3.5",
+    "rule": "Employees must not disclose internal credentials, employee contact rosters, network topology, or customer records over phone calls, chat apps, or in-person encounters without independent authentication of the requester's identity.",
+    "explanation": "Attackers leverage urgency, authority, and emotional manipulation to bypass technical access barriers.",
+    "keywords": ["social engineering", "vishing", "phone call", "impersonation", "pretexting", "fake boss", "otp request"]
+  },
+  {
+    "id": "POL-014",
+    "topic": "MFA",
+    "title": "Multi-Factor Authentication & Push Fatigue Protection",
+    "section": "Sec 2.3",
+    "rule": "MFA is mandatory across all corporate identities. Employees must never approve unexpected MFA push notifications, must not share one-time passcodes with anyone, and must immediately report repeated unauthorized prompt bombardment.",
+    "explanation": "MFA fatigue attacks rely on weary employees approving push prompts that they did not trigger.",
+    "keywords": ["mfa", "2fa", "two factor", "push notification", "authenticator", "otp", "push fatigue", "approve prompt"]
+  },
+  {
+    "id": "POL-015",
+    "topic": "Identity & Access",
+    "title": "Least Privilege & Account Segregation",
+    "section": "Sec 2.2",
+    "rule": "Access rights are granted based on the principle of least privilege. Account sharing between team members is strictly banned; each user must perform actions under their unique individual identity.",
+    "explanation": "Account sharing destroys non-repudiation and prevents forensic attribution during security incidents.",
+    "keywords": ["identity", "least privilege", "account sharing", "coworker login", "credentials", "access control"]
+  },
+  {
+    "id": "POL-016",
+    "topic": "BYOD",
+    "title": "Bring Your Own Device Security Governance",
+    "section": "Sec 7.1",
+    "rule": "Personal smartphones or tablets accessing company email or communication apps must enroll in the corporate Mobile Device Management (MDM) profile, have active screen locks, and maintain device encryption. Unmanaged laptops cannot access internal corporate networks.",
+    "explanation": "MDM enables selective remote wiping of corporate data if personal mobile devices are lost or employees depart.",
+    "keywords": ["byod", "personal phone", "personal laptop", "mdm", "mobile device management", "personal tablet"]
+  },
+  {
+    "id": "POL-017",
+    "topic": "Mobile Security",
+    "title": "Mobile Operating System & Application Hygiene",
+    "section": "Sec 7.2",
+    "rule": "Mobile devices accessing company assets must run supported OS versions with automatic patching enabled. Jailbroken or rooted devices are strictly forbidden from connecting to enterprise resources.",
+    "explanation": "Rooting or jailbreaking removes native OS sandboxing, exposing business tokens to malicious mobile apps.",
+    "keywords": ["mobile", "jailbreak", "root", "android", "ios", "iphone", "patching", "app store"]
+  },
+  {
+    "id": "POL-018",
+    "topic": "Data Privacy",
+    "title": "Personally Identifiable Information (PII) Protection",
+    "section": "Sec 8.1",
+    "rule": "Processing, storing, or transferring PII (social security numbers, dates of birth, personal addresses, health data) must comply with global privacy standards (GDPR, CCPA), require explicit business justification, and utilize field-level encryption.",
+    "explanation": "Unauthorized disclosure of personal identifiers incurs regulatory fines and customer breach liabilities.",
+    "keywords": ["privacy", "pii", "gdpr", "ccpa", "personal data", "customer privacy", "compliance", "retention"]
+  },
+  {
+    "id": "POL-019",
+    "topic": "AI Tool Usage",
+    "title": "Generative AI & LLM Service Data Protection",
+    "section": "Sec 9.1",
+    "rule": "Pasting Confidential or Restricted corporate data, customer records, proprietary source code, or internal financial figures into external public AI tools (such as ChatGPT, Claude, or free online assistants) is strictly prohibited. Only enterprise-contracted AI platforms with zero-retention agreements may be used.",
+    "explanation": "Public AI tools may ingest prompts into training corpora or expose sensitive intellectual property in server logs.",
+    "keywords": ["ai", "chatgpt", "generative ai", "llm", "claude", "prompt", "paste code", "ai tool", "ai extension", "copilot"]
+  },
+  {
+    "id": "POL-020",
+    "topic": "Shadow IT",
+    "title": "Unapproved Third-Party Cloud Services (Shadow IT)",
+    "section": "Sec 9.3",
+    "rule": "Employees may not register corporate accounts or conduct corporate operations on SaaS platforms, collaboration boards, or database tools that have not undergone InfoSec vendor risk assessment.",
+    "explanation": "Shadow IT leads to ungoverned data silos, unmonitored security controls, and vendor compliance breaches.",
+    "keywords": ["shadow it", "unapproved saas", "third party tool", "vendor", "trello", "notion", "airtable", "signup"]
+  },
+  {
+    "id": "POL-021",
+    "topic": "Remote Access",
+    "title": "Secure Remote Network Access & SSH Bastion Policy",
+    "section": "Sec 6.4",
+    "rule": "Remote management of production servers, databases, and administrative consoles must route through corporate VPN or Zero-Trust Network Access (ZTNA) proxies with hardware token MFA. Exposing direct RDP or SSH ports to the public internet is banned.",
+    "explanation": "Directly accessible management ports are continuously scanned and brute-forced by threat actors.",
+    "keywords": ["remote access", "vpn", "ztna", "ssh", "rdp", "bastion", "production access", "firewall"]
+  },
+  {
+    "id": "POL-022",
+    "topic": "Physical Security",
+    "title": "Facility Access Badging & Clean Desk Standard",
+    "section": "Sec 10.1",
+    "rule": "Employees must visibly wear ID badges on premises, challenge or report unescorted visitors, never permit tailgating through secure doors, and maintain a Clean Desk by locking confidential papers and keys in secure drawers before leaving.",
+    "explanation": "Physical perimeter security is the initial barrier preventing unauthorized hardware tapping and document theft.",
+    "keywords": ["physical security", "badge", "tailgating", "clean desk", "visitor", "id card", "door lock", "office access"]
+  },
+  {
+    "id": "POL-023",
+    "topic": "Device Security",
+    "title": "Workstation Encryption & Automated Inactivity Lock",
+    "section": "Sec 5.2",
+    "rule": "All corporate workstations must have full-disk encryption (BitLocker/FileVault) enabled, endpoint detection (EDR) active, and automatic screen sleep configured to 5 minutes of inactivity or less.",
+    "explanation": "Full disk encryption protects company data if a device is stolen while powered off.",
+    "keywords": ["device security", "bitlocker", "filevault", "encryption", "screen lock", "edr", "antivirus", "laptop"]
+  },
+  {
+    "id": "POL-024",
+    "topic": "Source Code Security",
+    "title": "Source Code Repositories & Secret Hygiene",
+    "section": "Sec 11.1",
+    "rule": "Corporate source code may only be committed to authorized private enterprise Git repositories. Committing API keys, tokens, or credentials into version control, or publishing internal repositories to public GitHub accounts, is strictly prohibited.",
+    "explanation": "Public Git leaks are automatically harvested within seconds by malicious scanning bots.",
+    "keywords": ["source code", "github", "git", "commit", "public repo", "private repo", "repository", "developer"]
+  },
+  {
+    "id": "POL-025",
+    "topic": "Third-Party Applications",
+    "title": "Third-Party OAuth Grants & API Integrations",
+    "section": "Sec 11.3",
+    "rule": "Employees must not grant broad OAuth permissions (such as Google/Microsoft account access) to unverified third-party web utilities, quiz sites, or browser tools without IT Security approval.",
+    "explanation": "Malicious OAuth applications grant persistent programmatic read/write access to inboxes and files without needing user passwords.",
+    "keywords": ["third party apps", "oauth", "permissions", "google login", "consent screen", "grant access", "integrate"]
+  },
+  {
+    "id": "POL-026",
+    "topic": "Customer Data",
+    "title": "Customer Record Handling & Export Restrictions",
+    "section": "Sec 8.2",
+    "rule": "Exporting bulk customer databases or production customer records to local spreadsheets, personal drives, or non-production test environments is prohibited. Anonymized synthetic data must be used for testing and staging.",
+    "explanation": "Mass data exports bypass central security logging and increase breach blast radiuses dramatically.",
+    "keywords": ["customer data", "database export", "csv", "spreadsheet", "client records", "synthetic data", "test environment"]
+  },
+  {
+    "id": "POL-027",
+    "topic": "Confidential Information",
+    "title": "Non-Disclosure & Trade Secret Governance",
+    "section": "Sec 4.2",
+    "rule": "Proprietary roadmaps, unreleased financial reports, source code, and employee records constitute Trade Secrets. Discussing confidential topics in public settings, elevators, or unmoderated external conferences is prohibited.",
+    "explanation": "Casual eavesdropping in transit or public spaces regularly yields critical intelligence to competitors and adversaries.",
+    "keywords": ["confidential information", "trade secrets", "nda", "disclosure", "public discussion", "eavesdropping"]
+  },
+  {
+    "id": "POL-028",
+    "topic": "Secrets Management",
+    "title": "API Key, Certificate, & Token Lifecycle",
+    "section": "Sec 11.2",
+    "rule": "Production API keys, database credentials, and signing certificates must be stored in secure secrets managers (e.g., Vault, Cloud KMS) and injected via runtime environment variables. They must never be hardcoded, emailed, or shared in chat.",
+    "explanation": "Hardcoded secrets live permanently in build artifacts, git trees, and backup snapshots.",
+    "keywords": ["secrets", "api key", "token", "hardcoded", "kms", "vault", "env var", "credentials leak"]
+  },
+  {
+    "id": "POL-029",
+    "topic": "QR Code Security",
+    "title": "QR Code (Quishing) Scanning Precaution",
+    "section": "Sec 3.6",
+    "rule": "Employees must exercise extreme caution when scanning QR codes in emails, postal mail, or on conference flyers. Verify destination URLs before entering credentials or approving logins; attackers use QR codes to bypass email security filters.",
+    "explanation": "Quishing moves phishing attacks off protected desktop screens onto personal mobile devices where email filters cannot inspect URLs.",
+    "keywords": ["qr code", "quishing", "scan qr", "mobile scan", "barcode", "fake login url"]
+  },
+  {
+    "id": "POL-030",
+    "topic": "Browser Security",
+    "title": "Enterprise Browser Configuration & Extension Policy",
+    "section": "Sec 5.4",
+    "rule": "Web browsing on corporate machines must occur within the managed enterprise browser profile. Disabling security protections, enabling third-party tracking cookies, or approving untrusted extension permissions is prohibited.",
+    "explanation": "Malicious extensions can read and manipulate DOM elements, including bank passwords and sensitive chat messages.",
+    "keywords": ["browser", "chrome", "firefox", "edge", "extension", "popup", "cookie", "incognito", "plugin"]
+  },
+  {
+    "id": "POL-031",
+    "topic": "Password Reset",
+    "title": "Self-Service Password Reset & Verification Protocol",
+    "section": "Sec 2.4",
+    "rule": "Password resets must be initiated only through the verified Corporate Self-Service portal. The IT Service Desk will never ask for your current password and will always verify identity via phone callback or manager sign-off.",
+    "explanation": "Help desk social engineering is a primary vector used by threat actors to hijack high-privilege executive accounts.",
+    "keywords": ["password reset", "forgot password", "help desk", "service desk", "verify identity", "reset link"]
+  },
+  {
+    "id": "POL-032",
+    "topic": "Account Recovery",
+    "title": "Recovery Codes & Backup Verification Factors",
+    "section": "Sec 2.5",
+    "rule": "MFA recovery codes must be stored in a secured physical location or encrypted company vault. Recovery codes must never be shared, photographed, or stored in unencrypted notes or shared team drives.",
+    "explanation": "Recovery codes bypass secondary authentication and grant unmitigated emergency access.",
+    "keywords": ["account recovery", "recovery codes", "backup codes", "mfa reset", "emergency access"]
+  },
+  {
+    "id": "POL-033",
+    "topic": "Travel Security",
+    "title": "International Business Travel & High-Risk Destinations",
+    "section": "Sec 6.5",
+    "rule": "Employees traveling abroad on company business must notify IT Security 14 days in advance. In designated high-risk regions, clean loaner travel laptops and burner mobile devices must be used, and personal devices left behind.",
+    "explanation": "Foreign border inspections and hostile telecommunications networks frequently deploy covert hardware and radio interception.",
+    "keywords": ["travel", "international travel", "airport", "loaner laptop", "customs", "high risk country", "hotel"]
+  },
+  {
+    "id": "POL-034",
+    "topic": "Public Locations",
+    "title": "Working in Public Venues & Screen Privacy Filters",
+    "section": "Sec 6.2",
+    "rule": "When working in coffee shops, airports, trains, or coworking spaces, employees must apply physical privacy filters to laptop screens and refrain from conducting confidential voice calls where sensitive project names or financials can be overheard.",
+    "explanation": "Visual eavesdropping in public places exposes strategic business operations without leaving digital forensic traces.",
+    "keywords": ["public locations", "privacy filter", "screen guard", "coworking", "coffee shop", "train", "overheard"]
+  },
+  {
+    "id": "POL-035",
+    "topic": "Removable Media",
+    "title": "Optical Discs, SD Cards, & Secondary Media Disinfection",
+    "section": "Sec 5.5",
+    "rule": "Any external storage media (SD cards, external drives) received from external vendors or clients must be submitted to the IT Security kiosk for automated malware sanitization before connection to corporate workstations.",
+    "explanation": "Vendor-supplied marketing collateral and diagnostic tools occasionally carry dormant firmware trojans.",
+    "keywords": ["removable media", "sd card", "external drive", "sanitization", "vendor media", "kiosk scan"]
+  },
+  {
+    "id": "POL-036",
+    "topic": "Messaging Apps",
+    "title": "Approved Corporate Instant Messaging Channels",
+    "section": "Sec 4.4",
+    "rule": "Corporate business communications must strictly occur within the enterprise Slack/Microsoft Teams tenants. Using personal WhatsApp, Telegram, Signal, or WeChat accounts for company decision-making or sharing customer records is prohibited.",
+    "explanation": "Consumer messaging applications evade compliance archiving, audit discovery, and corporate record retention policies.",
+    "keywords": ["messaging apps", "whatsapp", "telegram", "signal", "wechat", "slack", "teams", "chat"]
+  },
+  {
+    "id": "POL-037",
+    "topic": "Collaboration Platforms",
+    "title": "Digital Whiteboard & Document Workspace Access Rights",
+    "section": "Sec 4.6",
+    "rule": "Workspaces in tools like Miro, Figma, or Confluence containing architecture designs or customer data must be restricted to authenticated internal team members. Public link sharing or guest links without email verification are forbidden.",
+    "explanation": "Open digital whiteboards are routinely indexed by web search engines if public sharing switches are inadvertently toggled.",
+    "keywords": ["collaboration", "miro", "figma", "confluence", "jira", "whiteboard", "guest access", "workspace"]
+  },
+  {
+    "id": "POL-038",
+    "topic": "File Permissions",
+    "title": "Folder Permissions & Shared Drive Inheritance Rules",
+    "section": "Sec 4.7",
+    "rule": "Managers must audit shared folder access lists quarterly. Granular permissions must follow role-based access; never grant 'Full Control' or 'Domain Users' permissions when 'Read Only' suffices.",
+    "explanation": "Excessive write and modify permissions allow accidental deletions and accelerate lateral ransomware propagation across network shares.",
+    "keywords": ["file permissions", "folder rights", "shared drive", "read only", "rbac", "access audit", "inheritance"]
+  },
+  {
+    "id": "POL-039",
+    "topic": "Data Retention",
+    "title": "Data Lifecycle & Record Retention Timelines",
+    "section": "Sec 8.3",
+    "rule": "Data must be retained only for as long as required by statutory, regulatory, and business requirements. Once the retention period expires, records must be permanently purged according to the schedule to minimize legal exposure.",
+    "explanation": "Hoarding obsolete customer or employee data indefinitely compounds financial liabilities in the event of a breach.",
+    "keywords": ["data retention", "purge", "retention schedule", "lifecycle", "delete records", "storage timeline"]
+  },
+  {
+    "id": "POL-040",
+    "topic": "Secure Disposal",
+    "title": "Hardware Decommissioning & Media Sanitization",
+    "section": "Sec 10.2",
+    "rule": "Physical documents containing business data must be disposed of in locked cross-cut shredding consoles. End-of-life laptops, storage drives, and cellphones must be surrendered to IT for certified cryptographic erasure or physical degaussing (NIST SP 800-88).",
+    "explanation": "Discarding paper in normal wastebaskets or giving old drives to recycling bins enables dumpster diving and data recovery.",
+    "keywords": ["secure disposal", "shredding", "hardware disposal", "degaussing", "nist 800-88", "e-waste", "hard drive wipe"]
+  }
+]

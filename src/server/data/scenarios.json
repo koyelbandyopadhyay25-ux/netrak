@@ -1,0 +1,662 @@
+[
+  {
+    "id": "SCN-001",
+    "topic": "data sharing",
+    "title": "The Weekend Client Database Emergency",
+    "context": "It is Friday at 6:30 PM. A critical client deadline is scheduled for Monday morning, and you plan to work from home on your personal desktop computer. You are tempted to upload the 50,000-record client database to your personal Google Drive or email it to your personal Gmail account.",
+    "dilemma": "How do you handle the client data so you can finish the analysis over the weekend?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Upload the CSV to personal Google Drive so you can easily access it on your home PC.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Violates Sec 4.5 (Cloud Storage) & Sec 8.2. Personal Google Drive lacks corporate DLP, access governance, and NDA compliance.",
+        "policyCitation": "POL-006 & POL-026"
+      },
+      {
+        "id": "opt-2",
+        "text": "Email the spreadsheet to your personal Gmail account with 'Urgent' in the subject line.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Severe violation of Sec 4.1 & Sec 4.5. Personal webmail is monitored for data exfiltration and breaches data residency laws.",
+        "policyCitation": "POL-004 & POL-006"
+      },
+      {
+        "id": "opt-3",
+        "text": "Use your corporate-issued laptop connected to the corporate VPN, keeping all data inside approved cloud tenants.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Correct decision! Keeping data inside the managed perimeter ensures encryption, audit logging, and zero unauthorized exposure.",
+        "policyCitation": "POL-006 & POL-009"
+      }
+    ]
+  },
+  {
+    "id": "SCN-002",
+    "topic": "AI security",
+    "title": "Summarizing Proprietary Source Code with AI",
+    "context": "You are debugging a complex internal authentication module. An online public AI coding tool claims to diagnose performance bottlenecks in seconds if you paste the entire codebase and SQL schema into its prompt window.",
+    "dilemma": "Should you paste the source code into the free online AI assistant?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Paste the code into the public AI tool, because it's only code logic and not customer names.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Violates Sec 9.1 (Generative AI) & Sec 11.1 (Source Code). Public AI services may train on prompt inputs and store internal architecture permanently.",
+        "policyCitation": "POL-019 & POL-024"
+      },
+      {
+        "id": "opt-2",
+        "text": "Remove database passwords from the code, then paste the remaining 5,000 lines of proprietary code into the public AI tool.",
+        "risk": "MEDIUM",
+        "isCorrect": false,
+        "feedback": "Still a violation. Proprietary intellectual property, business logic, and schema structures remain exposed to third-party retention.",
+        "policyCitation": "POL-019"
+      },
+      {
+        "id": "opt-3",
+        "text": "Use only company-approved enterprise AI tools with signed zero-data-retention agreements, or consult a senior internal engineer.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Excellent decision! Enterprise-contracted AI protects corporate IP while preserving developer productivity.",
+        "policyCitation": "POL-019"
+      }
+    ]
+  },
+  {
+    "id": "SCN-003",
+    "topic": "phishing",
+    "title": "The Impersonated CEO's Boardroom Emergency",
+    "context": "You receive an email from 'Sarah Jenkins <sjenkins.ceo.board@gmail.com>' with display name 'Sarah Jenkins (CEO)'. The email states: 'I am trapped in an offsite investor meeting with bad reception. I need you to purchase 10 Apple gift cards ($100 each) for client gifts immediately and text me the codes. Do not call my office line as my phone is muted.'",
+    "dilemma": "How do you respond to the CEO's urgent request?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Rush to the nearest convenience store, purchase the cards with your personal credit card, and text the photos.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Classic Business Email Compromise (BEC) scam. Executives never order gift card purchases through personal Gmail accounts.",
+        "policyCitation": "POL-002"
+      },
+      {
+        "id": "opt-2",
+        "text": "Reply to the Gmail address asking if she can approve an expense reimbursement form first.",
+        "risk": "MEDIUM",
+        "isCorrect": false,
+        "feedback": "Replying confirms to the attacker that your email address is active and responsive.",
+        "policyCitation": "POL-002"
+      },
+      {
+        "id": "opt-3",
+        "text": "Do not purchase gift cards. Report the email immediately as executive impersonation via NETRAK.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Correct! Immediate reporting allows the SOC to block the attacker's domain across the entire enterprise.",
+        "policyCitation": "POL-002 & POL-003"
+      }
+    ]
+  },
+  {
+    "id": "SCN-004",
+    "topic": "public Wi-Fi",
+    "title": "Airport Wi-Fi and the Urgent Contract",
+    "context": "While waiting for a flight at an international airport, you connect your company laptop to 'Airport_Public_Free_WiFi'. A client emails you demanding immediate signature on a multi-million-dollar contract.",
+    "dilemma": "How should you access corporate systems to sign and transmit the contract?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Open Chrome in Incognito mode and access the contract portal directly.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Incognito mode provides zero transport encryption. Attackers running rogue access points can intercept session cookies.",
+        "policyCitation": "POL-009 & POL-030"
+      },
+      {
+        "id": "opt-2",
+        "text": "Connect to the corporate VPN client first, verify the secure tunnel, then review and sign the contract.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Safe and compliant! Corporate VPN encrypts all traffic from the endpoint, shielding payloads from open Wi-Fi sniffing.",
+        "policyCitation": "POL-009"
+      },
+      {
+        "id": "opt-3",
+        "text": "Ask another passenger to share their personal Wi-Fi password instead.",
+        "risk": "MEDIUM",
+        "isCorrect": false,
+        "feedback": "Third-party guest hotspots are still untrusted networks.",
+        "policyCitation": "POL-009"
+      }
+    ]
+  },
+  {
+    "id": "SCN-005",
+    "topic": "incident response",
+    "title": "The Suspicious Link and Password Prompt",
+    "context": "You received an email that looked like a shipping notification from FedEx. You clicked the tracking link, and it redirected to a page that looked like the corporate Microsoft 365 sign-in page. You entered your corporate email and password. Immediately after clicking Submit, the page redirected to a 404 error.",
+    "dilemma": "What do you do right now?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Close the tab, assume it was just a glitch, and continue working on your afternoon tasks.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Dangerous mistake! You just handed your corporate credentials to a phishing adversary. Immediate action is vital.",
+        "policyCitation": "POL-011"
+      },
+      {
+        "id": "opt-2",
+        "text": "Immediately disconnect from network/Wi-Fi, report the incident via NETRAK or the SOC hotline, and initiate a password reset.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Exact right response! Halts active beaconing, notifies security for session revocation, and neutralizes credential abuse.",
+        "policyCitation": "POL-011 & POL-001"
+      },
+      {
+        "id": "opt-3",
+        "text": "Wait until tomorrow to see if IT calls you about unusual activity.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Attacker dwell time averages under an hour for credential compromise. Waiting amplifies breach scope.",
+        "policyCitation": "POL-011"
+      }
+    ]
+  },
+  {
+    "id": "SCN-006",
+    "topic": "USB",
+    "title": "The Labeled Flash Drive in the Parking Lot",
+    "context": "Walking into the office from the parking lot, you notice a brand new 128GB flash drive with a handwritten label: 'Q4 Executive Compensation & Staffing'.",
+    "dilemma": "What is the safest action?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Plug it into your computer to see whose name is on the document and return it to them.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Classic USB drop attack! Attackers bait curiosity to deploy keystroke injection or malware directly onto corporate endpoints.",
+        "policyCitation": "POL-007"
+      },
+      {
+        "id": "opt-2",
+        "text": "Deliver the flash drive directly to the Physical Security or IT Desk without plugging it in.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Perfect! Security personnel can examine it inside isolated sandbox environments without risking corporate endpoints.",
+        "policyCitation": "POL-007 & POL-035"
+      },
+      {
+        "id": "opt-3",
+        "text": "Plug it into a colleague's laptop instead to test it.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Exposes colleague's system to endpoint compromise.",
+        "policyCitation": "POL-007"
+      }
+    ]
+  },
+  {
+    "id": "SCN-007",
+    "topic": "physical security",
+    "title": "Tailgating Through the Secure Lab Door",
+    "context": "You badge into the secure server and R&D laboratory. A smartly dressed individual carrying two heavy catering boxes approaches quickly behind you and says, 'Could you hold the door? My hands are full!'",
+    "dilemma": "How do you handle this situation?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Hold the door open to be courteous since they have heavy boxes.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Tailgating (piggybacking) is a primary physical social engineering tactic. Politeness cannot override physical access control.",
+        "policyCitation": "POL-022"
+      },
+      {
+        "id": "opt-2",
+        "text": "Let the door click shut, and politely explain that security policy requires all entrants to badge in, or escort them to reception.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Proper protocol. Protects physical boundaries while maintaining a professional, calm demeanor.",
+        "policyCitation": "POL-022"
+      },
+      {
+        "id": "opt-3",
+        "text": "Swipe your badge twice so they have a badge record under your name.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "You become legally and forensically liable for all unauthorized actions taken by the untracked individual.",
+        "policyCitation": "POL-015 & POL-022"
+      }
+    ]
+  },
+  {
+    "id": "SCN-008",
+    "topic": "secrets",
+    "title": "The Accidental GitHub Commit",
+    "context": "While pushing code to an internal service, you accidentally commit a `.env` file containing the production Stripe API key to your public personal GitHub account instead of the private enterprise repository.",
+    "dilemma": "How do you resolve this immediate exposure?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Make the public repo private and push a commit removing the file.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Public Git scraping bots clone repositories within 3 seconds of a commit. The key is already compromised in third-party bot caches.",
+        "policyCitation": "POL-028"
+      },
+      {
+        "id": "opt-2",
+        "text": "Immediately log into Stripe, revoke/rotate the compromised key, and report the exposure via NETRAK.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Key invalidation neutralizes the exploit vector immediately, and NETRAK reporting enables incident auditing of API calls.",
+        "policyCitation": "POL-028 & POL-011"
+      },
+      {
+        "id": "opt-3",
+        "text": "Delete the entire repository on GitHub and don't tell anyone.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "The secret was scraped instantly; hiding the mistake prevents the company from securing the compromised financial channel.",
+        "policyCitation": "POL-011 & POL-028"
+      }
+    ]
+  },
+  {
+    "id": "SCN-009",
+    "topic": "remote work",
+    "title": "Working in a Crowded Coffee Shop",
+    "context": "You are sitting at an open cafe table preparing a confidential quarterly revenue forecast. A stranger sits at the table directly behind you with their laptop angled toward your screen, while someone else on your left is glancing over frequently.",
+    "dilemma": "What precautions should you take?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Dim your screen brightness slightly and continue reviewing the financial figures.",
+        "risk": "MEDIUM",
+        "isCorrect": false,
+        "feedback": "Dimming is insufficient to prevent visual eavesdropping on sensitive financial numbers.",
+        "policyCitation": "POL-034"
+      },
+      {
+        "id": "opt-2",
+        "text": "Attach a physical privacy filter to your screen, position yourself with your back to a solid wall, and avoid viewing confidential figures in plain sight.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Applying privacy filters and physical spatial awareness stops shoulder surfing in public settings.",
+        "policyCitation": "POL-010 & POL-034"
+      },
+      {
+        "id": "opt-3",
+        "text": "Take a photo of the numbers on your phone so you can read them quickly instead.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Photographing confidential data on mobile devices violates data protection and privacy rules.",
+        "policyCitation": "POL-018"
+      }
+    ]
+  },
+  {
+    "id": "SCN-010",
+    "topic": "MFA",
+    "title": "The 3 AM Authenticator Storm",
+    "context": "Your phone buzzes repeatedly in the middle of the night with 8 consecutive Duo push notifications asking 'Are you logging into Enterprise Okta?'.",
+    "dilemma": "How do you handle this push fatigue attack?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Tap Approve on one prompt so the phone stops buzzing and you can sleep.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Critical compromise! Approving grants the attacker active access to your enterprise session.",
+        "policyCitation": "POL-014"
+      },
+      {
+        "id": "opt-2",
+        "text": "Tap 'Deny & Report Fraud' on the prompt, then open NETRAK to notify the SOC and initiate a password reset in the morning.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Perfect! Denying shuts out the attacker and alerts the monitoring system to freeze the compromised account.",
+        "policyCitation": "POL-014 & POL-011"
+      },
+      {
+        "id": "opt-3",
+        "text": "Uninstall the Duo app from your phone.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Fails to alert security while leaving your underlying account credentials compromised.",
+        "policyCitation": "POL-014"
+      }
+    ]
+  },
+  {
+    "id": "SCN-011",
+    "topic": "social engineering",
+    "title": "The Fake Internal Audit Call",
+    "context": "A caller with an authoritative British accent phones your desk: 'Hello, this is Marcus Vance from Corporate Internal Compliance. We are auditing executive directory access. I need you to confirm the personal mobile number and home address of Vice President Davis.'",
+    "dilemma": "How do you respond to the authoritative caller?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Read the VP's personal details because the caller cited internal audit authority.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Vishing attack! Attackers routinely cite audit or executive teams to intimidate employees into bypassing privacy rules.",
+        "policyCitation": "POL-013 & POL-018"
+      },
+      {
+        "id": "opt-2",
+        "text": "Refuse to disclose personal employee data over the phone. Request their employee ID, hang up, and verify the inquiry through official channels.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Standard out-of-band verification procedure. Defeats social engineering pretexts.",
+        "policyCitation": "POL-013"
+      },
+      {
+        "id": "opt-3",
+        "text": "Offer to email the VP's full personnel file to the caller's personal Gmail.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Severe violation of PII protection standards.",
+        "policyCitation": "POL-006 & POL-018"
+      }
+    ]
+  },
+  {
+    "id": "SCN-012",
+    "topic": "software",
+    "title": "The 'Free' Productivity Browser Extension",
+    "context": "A popular productivity Chrome extension offers 'One-Click AI Meeting Summaries'. Upon installation, the Chrome Web Store warns: 'This extension requires permission to read and change all your data on all websites you visit.'",
+    "dilemma": "Should you grant these extensive permissions on your work browser?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Click 'Allow' because many popular extensions ask for that permission.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Extreme risk! An extension with broad DOM access can harvest session cookies, passwords, and confidential customer records.",
+        "policyCitation": "POL-008 & POL-030"
+      },
+      {
+        "id": "opt-2",
+        "text": "Cancel the installation. Submit a software evaluation request through the IT Corporate Software Portal for an approved alternative.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Correct protocol. Only IT-vetted extensions may operate within corporate browser environments.",
+        "policyCitation": "POL-008 & POL-030"
+      },
+      {
+        "id": "opt-3",
+        "text": "Install it in an Incognito window thinking that isolates it.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Extensions enabled in Incognito still retain full access to active DOM data.",
+        "policyCitation": "POL-030"
+      }
+    ]
+  },
+  {
+    "id": "SCN-013",
+    "topic": "messaging apps",
+    "title": "Client Requesting WhatsApp Group for Contracts",
+    "context": "A major enterprise customer says: 'Our executive team only communicates via WhatsApp. Please send the final unredacted pricing sheet and legal terms in our WhatsApp group chat.'",
+    "dilemma": "How do you navigate this communication request?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Upload the pricing sheet to WhatsApp because customer convenience comes first.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Violates Sec 4.4. Consumer messaging apps bypass corporate records retention, legal discovery, and data governance.",
+        "policyCitation": "POL-036"
+      },
+      {
+        "id": "opt-2",
+        "text": "Explain that corporate security and compliance policy requires contracts to be shared via authenticated enterprise channels (e.g. encrypted corporate email or customer portal).",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Professional and compliant. Protects commercial agreements within legally auditable repositories.",
+        "policyCitation": "POL-036 & POL-005"
+      },
+      {
+        "id": "opt-3",
+        "text": "Screenshot each page of the contract and send the pictures on WhatsApp.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Still transmits confidential enterprise assets through unapproved consumer channels.",
+        "policyCitation": "POL-036"
+      }
+    ]
+  },
+  {
+    "id": "SCN-014",
+    "topic": "QR code security",
+    "title": "The Breakroom Parking Validation QR Code",
+    "context": "A printed flyer taped next to the office water cooler says: 'Building Management: Scan this QR code to claim your free monthly parking validation pass.' Scanning it on your phone opens a webpage asking for your corporate Microsoft credentials.",
+    "dilemma": "Should you enter your credentials on the mobile page?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Enter your corporate credentials so you get free parking validation.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Quishing attack! Malicious QR codes redirect users to credential harvesting sites on unmanaged mobile phones.",
+        "policyCitation": "POL-029"
+      },
+      {
+        "id": "opt-2",
+        "text": "Close the page, do not enter any credentials, take a photo of the flyer, and report the physical quishing attempt to Security.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Outstanding vigilance! Reporting physical social engineering protects all building occupants.",
+        "policyCitation": "POL-029 & POL-011"
+      },
+      {
+        "id": "opt-3",
+        "text": "Enter fake credentials with vulgar words to test the site.",
+        "risk": "MEDIUM",
+        "isCorrect": false,
+        "feedback": "Unprofessional and alerts the attacker without assisting formal containment.",
+        "policyCitation": "POL-029"
+      }
+    ]
+  },
+  {
+    "id": "SCN-015",
+    "topic": "incident response",
+    "title": "The Stolen Taxi Laptop",
+    "context": "While traveling on business, you accidentally leave your corporate laptop in the trunk of a taxi. You have the taxi receipt but the dispatch company cannot reach the driver for at least 3 hours.",
+    "dilemma": "When should you report the lost device to corporate security?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Wait until tomorrow morning in case the driver returns it to your hotel.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Violates Sec 1.2 (Mandatory 60-minute reporting). Waiting leaves the corporate identity active and increases data theft risk.",
+        "policyCitation": "POL-011"
+      },
+      {
+        "id": "opt-2",
+        "text": "Report the lost laptop immediately to the Security Operations Center via NETRAK or the 24/7 hotline so remote lock and session revocation can be dispatched.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Crucial quick reporting! SOC can remotely lock BitLocker keys and invalidate active SSO tokens.",
+        "policyCitation": "POL-011 & POL-023"
+      },
+      {
+        "id": "opt-3",
+        "text": "Buy a replacement laptop at a local store and set it up yourself so no one notices.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Severe violation of device governance and unacceptable concealment of an active incident.",
+        "policyCitation": "POL-011 & POL-016"
+      }
+    ]
+  },
+  {
+    "id": "SCN-016",
+    "topic": "source code security",
+    "title": "Open-Sourcing an Internal Utility Library",
+    "context": "You wrote a helpful React helper component during work hours. You want to publish it to your personal public GitHub account to boost your resume.",
+    "dilemma": "Can you publish the company-developed code to your personal public repo?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Yes, as long as you remove company logos from the CSS.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Code written on corporate time and systems belongs to the enterprise. Publishing without Open Source Review Board approval violates Sec 11.1.",
+        "policyCitation": "POL-024"
+      },
+      {
+        "id": "opt-2",
+        "text": "Submit the request through the formal corporate Open Source Review Board for legal and intellectual property clearance.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Compliant process. Ensures no trade secrets, patent conflicts, or proprietary dependencies are inadvertently released.",
+        "policyCitation": "POL-024 & POL-027"
+      },
+      {
+        "id": "opt-3",
+        "text": "Publish it anonymously under a pseudonym.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Still an unauthorized release of proprietary corporate property.",
+        "policyCitation": "POL-024"
+      }
+    ]
+  },
+  {
+    "id": "SCN-017",
+    "topic": "secure disposal",
+    "title": "Old Printed Customer Contracts in the Bin",
+    "context": "You are cleaning your desk drawers and find three printed contracts containing customer names, addresses, and credit limits from 2024.",
+    "dilemma": "How should you dispose of these obsolete physical documents?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Throw them in the general blue recycling bin beside your desk.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Violates Sec 10.2. General recycling bins are not locked and expose customer PII to unauthorized custodial staff or visitors.",
+        "policyCitation": "POL-040"
+      },
+      {
+        "id": "opt-2",
+        "text": "Deposit the documents into the locked, cross-cut shredding console for certified secure disposal.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Correct! Locked consoles ensure document chain of custody until industrial destruction.",
+        "policyCitation": "POL-040"
+      },
+      {
+        "id": "opt-3",
+        "text": "Tear them in half by hand and place them in the kitchen trash.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Torn documents are easily reconstructed.",
+        "policyCitation": "POL-040"
+      }
+    ]
+  },
+  {
+    "id": "SCN-018",
+    "topic": "travel security",
+    "title": "Public USB Charging Kiosk at the Airport Gate",
+    "context": "Your corporate smartphone battery is at 4% right before boarding. There is a public USB charging kiosk with open USB-A ports offering 'Free High-Speed Charge'.",
+    "dilemma": "Should you plug your phone directly into the public USB kiosk port?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Plug directly in using a standard data cable because you need battery.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "'Juice Jacking' risk! Modified charging kiosks can initiate unauthorized data sync or install mobile exploits over USB data lines.",
+        "policyCitation": "POL-007 & POL-033"
+      },
+      {
+        "id": "opt-2",
+        "text": "Use your own AC wall adapter into an electrical power outlet, or use a data-blocking USB 'condom' that only passes power pins.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Safe power management! Using AC outlets prevents all data transmission.",
+        "policyCitation": "POL-033"
+      },
+      {
+        "id": "opt-3",
+        "text": "Plug it into a stranger's laptop at the gate.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Untrusted endpoint connection risks bidirectional compromise.",
+        "policyCitation": "POL-007"
+      }
+    ]
+  },
+  {
+    "id": "SCN-019",
+    "topic": "collaboration security",
+    "title": "The Public Figma Architecture Diagram",
+    "context": "You created a Figma board illustrating the complete database schema, microservice topology, and private IP subnets of the corporate cloud platform. You want to share it with an external freelance designer.",
+    "dilemma": "How should you configure the Figma sharing link?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Set link access to 'Anyone with the link can view' for convenience.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Major risk! Public links are routinely indexed by search bots or accidentally leaked, revealing internal network architecture.",
+        "policyCitation": "POL-037 & POL-005"
+      },
+      {
+        "id": "opt-2",
+        "text": "Restrict access to authenticated email addresses only, require password/SSO, and omit internal IP subnets from visual diagrams.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Strict access governance ensures network blueprints are visible only to verified collaborators.",
+        "policyCitation": "POL-037"
+      },
+      {
+        "id": "opt-3",
+        "text": "Post the Figma link in a public Reddit design forum to ask for feedback.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Severe violation of Non-Disclosure and Confidentiality standards.",
+        "policyCitation": "POL-027"
+      }
+    ]
+  },
+  {
+    "id": "SCN-020",
+    "topic": "identity",
+    "title": "Sharing Admin Account for Production Hotfix",
+    "context": "A critical production bug occurs on a Saturday night. The lead DevOps engineer is on a flight without Wi-Fi. A teammate asks you: 'Do you have Dave's root database password or can we log into his AWS admin console?'",
+    "dilemma": "Should you share credentials or use someone else's admin login?",
+    "choices": [
+      {
+        "id": "opt-1",
+        "text": "Share Dave's password if you know it, because fixing the outage is urgent.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Violates Sec 2.2 (Account Segregation). Shared logins destroy audit trails and non-repudiation.",
+        "policyCitation": "POL-015"
+      },
+      {
+        "id": "opt-2",
+        "text": "Follow the designated Emergency Break-Glass procedure where temporary elevated access is provisioned to a unique named identity with full session recording.",
+        "risk": "LOW",
+        "isCorrect": true,
+        "feedback": "Compliant emergency response. Preserves accountability while enabling swift resolution.",
+        "policyCitation": "POL-015 & POL-021"
+      },
+      {
+        "id": "opt-3",
+        "text": "Disable the production firewall temporarily so everyone can log in without passwords.",
+        "risk": "HIGH",
+        "isCorrect": false,
+        "feedback": "Catastrophic security failure that invites immediate automated compromise.",
+        "policyCitation": "POL-021"
+      }
+    ]
+  }
+]

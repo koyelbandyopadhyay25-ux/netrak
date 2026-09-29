@@ -1,0 +1,18 @@
+[
+  { "id": "USR-001", "name": "Alex Rivera", "email": "alex.rivera@corp.netrak.internal", "role": "Senior Engineer", "department": "Engineering", "awarenessScore": 88 },
+  { "id": "USR-002", "name": "Elena Rostova", "email": "elena.rostova@corp.netrak.internal", "role": "Brand Lead", "department": "Marketing", "awarenessScore": 64 },
+  { "id": "USR-003", "name": "Marcus Vance", "email": "marcus.vance@corp.netrak.internal", "role": "Account Executive", "department": "Sales", "awarenessScore": 72 },
+  { "id": "USR-004", "name": "Priya Sharma", "email": "priya.sharma@corp.netrak.internal", "role": "Support Lead", "department": "Customer Success", "awarenessScore": 82 },
+  { "id": "USR-005", "name": "Liam O'Connor", "email": "liam.oconnor@corp.netrak.internal", "role": "Site Reliability Engineer", "department": "DevOps", "awarenessScore": 95 },
+  { "id": "USR-006", "name": "Chloe Zhao", "email": "chloe.zhao@corp.netrak.internal", "role": "Talent Specialist", "department": "Human Resources", "awarenessScore": 78 },
+  { "id": "USR-007", "name": "Jordan Miller", "email": "jordan.miller@corp.netrak.internal", "role": "Financial Analyst", "department": "Finance", "awarenessScore": 89 },
+  { "id": "USR-008", "name": "Tariq Mansoor", "email": "tariq.mansoor@corp.netrak.internal", "role": "SecOps Analyst", "department": "Security Ops", "awarenessScore": 98 },
+  { "id": "USR-009", "name": "Samantha Reed", "email": "samantha.reed@corp.netrak.internal", "role": "Corporate Counsel", "department": "Legal", "awarenessScore": 91 },
+  { "id": "USR-010", "name": "Vikram Patel", "email": "vikram.patel@corp.netrak.internal", "role": "Fullstack Developer", "department": "Engineering", "awarenessScore": 84 },
+  { "id": "USR-011", "name": "Hannah Abbott", "email": "hannah.abbott@corp.netrak.internal", "role": "Product Designer", "department": "Product", "awarenessScore": 76 },
+  { "id": "USR-012", "name": "Carlos Gomez", "email": "carlos.gomez@corp.netrak.internal", "role": "Operations Manager", "department": "Operations", "awarenessScore": 80 },
+  { "id": "USR-013", "name": "Zoe Chen", "email": "zoe.chen@corp.netrak.internal", "role": "Data Scientist", "department": "Data Science", "awarenessScore": 87 },
+  { "id": "USR-014", "name": "Benjamin Hayes", "email": "benjamin.hayes@corp.netrak.internal", "role": "VP of Engineering", "department": "Leadership", "awarenessScore": 92 },
+  { "id": "USR-015", "name": "Maya Lin", "email": "maya.lin@corp.netrak.internal", "role": "Chief Information Security Officer", "department": "Security Leadership", "awarenessScore": 99 },
+  { "id": "USR-016", "name": "Demo Employee", "email": "employee@corp.netrak.internal", "role": "Senior Associate", "department": "Operations", "awarenessScore": 72 }
+]

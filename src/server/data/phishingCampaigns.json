@@ -1,0 +1,132 @@
+[
+  {
+    "id": "SIM-2026-01",
+    "name": "Q3 Executive Compensation Adjustment Drill",
+    "difficulty": "medium",
+    "scenario": "Fake HR Benefits Portal Update",
+    "targetGroup": "All Staff (Global)",
+    "status": "COMPLETED",
+    "sender": "Human Resources <hr-benefits-portal@netrak-corporate-hr.online>",
+    "subject": "ACTION REQUIRED: Review Your 2026-2027 Compensation Tier",
+    "previewText": "Please verify your employee ID and direct deposit confirmation within 48 hours...",
+    "body": "Dear Employee,\n\nAs part of our annual compensation adjustments, our records indicate your compensation tier has been updated for Q3 2026. Please log in to the employee portal via the link below to verify your tax withholdings and direct deposit confirmation before Friday 5:00 PM.\n\nFailure to review by the deadline will defer your next payroll disbursement.",
+    "ctaText": "Review Compensation Adjustment",
+    "objective": "Evaluate staff vigilance against urgency-driven HR payroll credential harvesting lures.",
+    "metrics": {
+      "simulated": 320,
+      "viewed": 298,
+      "clicked": 42,
+      "reported": 218,
+      "ignored": 38
+    },
+    "redFlags": [
+      "External domain: netrak-corporate-hr.online (not internal)",
+      "Manufactured urgency regarding payroll withholding deferral",
+      "Generic salutation: 'Dear Employee'"
+    ]
+  },
+  {
+    "id": "SIM-2026-02",
+    "name": "Mandatory IT Endpoint Compliance Patch",
+    "difficulty": "high",
+    "scenario": "Fake IT Security Alert with Direct SSO Link",
+    "targetGroup": "Engineering & Product",
+    "status": "ACTIVE",
+    "sender": "Global IT Desk <it-endpoint-support@corpadm-portal.net>",
+    "subject": "CRITICAL: Urgent CrowdStrike Falcon Certificate Update Required",
+    "previewText": "Your endpoint compliance certificate will expire in 2 hours...",
+    "body": "Hi Colleague,\n\nOur automated security monitoring system detected that your workstation EDR certificate has desynchronized from the corporate master server. If not re-authenticated within 2 hours, your VPN and network access will be temporarily locked out.\n\nPlease authenticate your Microsoft 365 identity below to push the certificate update silently.",
+    "ctaText": "Synchronize EDR Certificate Now",
+    "objective": "Test developer and technical staff susceptibility to technical jargon and immediate lockout fear.",
+    "metrics": {
+      "simulated": 185,
+      "viewed": 172,
+      "clicked": 19,
+      "reported": 142,
+      "ignored": 11
+    },
+    "redFlags": [
+      "Spoofed domain corpadm-portal.net",
+      "Aggressive 2-hour lockout deadline",
+      "Legitimate EDR agent updates are managed silently without manual user SSO inputs"
+    ]
+  },
+  {
+    "id": "SIM-2026-03",
+    "name": "Urgent Vendor Overdue Invoice #INV-9902",
+    "difficulty": "medium",
+    "scenario": "Fake Vendor Accounting Payment Notice",
+    "targetGroup": "Finance & Operations",
+    "status": "COMPLETED",
+    "sender": "Apex Cloud Infrastructure <billing@apexcloud-invoicing.co>",
+    "subject": "OVERDUE NOTICE: Immediate Wire Transfer Required for Invoice #9902",
+    "previewText": "Notice of pending account suspension for primary hosting servers...",
+    "body": "Attention Accounts Payable,\n\nInvoice #9902 for $18,450.00 is now 14 days past due. If funds are not received via wire transfer within 24 hours, cloud database instances will be suspended.\n\nReview the attached invoice PDF and updated banking details.",
+    "ctaText": "Download Invoice & Wire Instructions",
+    "objective": "Assess finance team protocols for out-of-band banking detail verification.",
+    "metrics": {
+      "simulated": 64,
+      "viewed": 61,
+      "clicked": 5,
+      "reported": 52,
+      "ignored": 4
+    },
+    "redFlags": [
+      "Unfamiliar sender domain apexcloud-invoicing.co",
+      "Unverified bank routing modifications requested via plain email",
+      "High urgency threat of server suspension"
+    ]
+  },
+  {
+    "id": "SIM-2026-04",
+    "name": "CEO Offsite Confidential Inquiries",
+    "difficulty": "high",
+    "scenario": "Executive Impersonation (CEO BEC)",
+    "targetGroup": "Sales & Marketing",
+    "status": "COMPLETED",
+    "sender": "Sarah Jenkins (CEO) <sarah.jenkins.corpboard@gmail.com>",
+    "subject": "Quick task — in meetings today",
+    "previewText": "Are you at your desk right now? Need a quick discreet favor...",
+    "body": "Hi,\n\nAre you at your desk right now? I am tied up in confidential investor discussions and my phone is on silent. I need you to handle an urgent confidential request for an upcoming client closing dinner. Let me know if you can assist right away.\n\nBest,\nSarah Jenkins\nCEO",
+    "ctaText": "Reply to Confirm Availability",
+    "objective": "Train employees to recognize CEO impersonation via free webmail addresses.",
+    "metrics": {
+      "simulated": 110,
+      "viewed": 104,
+      "clicked": 14,
+      "reported": 84,
+      "ignored": 6
+    },
+    "redFlags": [
+      "Sent from personal @gmail.com address rather than corporate domain",
+      "Request for secrecy and bypassing normal office phone contact",
+      "Pretexting setup for subsequent gift card or wire fraud"
+    ]
+  },
+  {
+    "id": "SIM-2026-05",
+    "name": "Shared Cloud Document Notification",
+    "difficulty": "low",
+    "scenario": "Fake Document Sharing Request",
+    "targetGroup": "All Staff (Global)",
+    "status": "COMPLETED",
+    "sender": "Document Cloud Alert <notifications@shared-docs-online365.xyz>",
+    "subject": "Elena Rostova shared a document '2027 Strategic Roadmap.docx' with you",
+    "previewText": "Click here to open and collaborate on the document in OneDrive...",
+    "body": "Elena Rostova has invited you to view the document '2027 Strategic Roadmap.docx' hosted on Enterprise Document Share.\n\nThis link will remain active for 24 hours.",
+    "ctaText": "Open Document in OneDrive",
+    "objective": "Baseline simulation evaluating document sharing link inspection.",
+    "metrics": {
+      "simulated": 320,
+      "viewed": 305,
+      "clicked": 58,
+      "reported": 194,
+      "ignored": 53
+    },
+    "redFlags": [
+      "Top level domain .xyz",
+      "Link targets third-party harvesting domain instead of corporate tenant SharePoint",
+      "No notification inside real Microsoft Teams or Outlook calendar"
+    ]
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "FAQ-001",
+    "question": "Can I share my login credentials with a teammate who needs urgent access?",
+    "answer": "No. Account sharing is strictly prohibited under Sec 2.2. Each employee must use their own credentials. Contact IT Service Desk for role-based delegation or temporary access.",
+    "policyId": "POL-015",
+    "category": "Identity & Access"
+  },
+  {
+    "id": "FAQ-002",
+    "question": "Why should I use Multi-Factor Authentication (MFA)?",
+    "answer": "MFA adds a critical second layer of defense. Even if an attacker steals your password, they cannot gain access without your second physical or biometric factor (Sec 2.3).",
+    "policyId": "POL-014",
+    "category": "MFA"
+  },
+  {
+    "id": "FAQ-003",
+    "question": "What should I do if I receive an unexpected MFA push notification on my phone?",
+    "answer": "Deny the request immediately! Do not approve it. Repeated prompts indicate an MFA fatigue attack. Report it right away in NETRAK or call the Security Hotline.",
+    "policyId": "POL-014",
+    "category": "MFA"
+  },
+  {
+    "id": "FAQ-004",
+    "question": "Can I reuse my work password on external websites or personal tools?",
+    "answer": "No. Reusing passwords across work and personal sites allows a breach at any external website to compromise your corporate identity (Sec 2.1).",
+    "policyId": "POL-001",
+    "category": "Password Security"
+  },
+  {
+    "id": "FAQ-005",
+    "question": "Can I store my passwords in a text file or sticky note on my desktop?",
+    "answer": "No. Passwords stored in plaintext are easily read by anyone near your desk or malware scanning your drive. Use the enterprise-approved password vault (Sec 2.1).",
+    "policyId": "POL-001",
+    "category": "Password Security"
+  },
+  {
+    "id": "FAQ-006",
+    "question": "Is it safe to save corporate passwords in my web browser?",
+    "answer": "Browser-stored passwords can be exported or extracted by malicious extensions and infostealers. Use the dedicated enterprise password manager instead (Sec 2.1 & Sec 5.4).",
+    "policyId": "POL-030",
+    "category": "Browser Security"
+  },
+  {
+    "id": "FAQ-007",
+    "question": "What should I do if an email asks for an urgent gift card purchase or wire transfer?",
+    "answer": "Treat it as an executive impersonation attack (BEC). Never buy gift cards or initiate transfers without verbal verification via known phone numbers (Sec 3.2).",
+    "policyId": "POL-002",
+    "category": "Email Security"
+  },
+  {
+    "id": "FAQ-008",
+    "question": "How do I check if an inbound email attachment or link is legitimate?",
+    "answer": "Inspect the sender's full email domain (not just display name), look for spelling variations, avoid opening unexpected archives or macros, and report it if suspicious (Sec 3.2).",
+    "policyId": "POL-002",
+    "category": "Email Security"
+  },
+  {
+    "id": "FAQ-009",
+    "question": "What are the common warning signs of a phishing email?",
+    "answer": "Look for false urgency, generic greetings, mismatch between link text and destination URL, unexpected requests for passwords or financial actions, and spoofed domains (Sec 3.4).",
+    "policyId": "POL-003",
+    "category": "Phishing"
+  },
+  {
+    "id": "FAQ-010",
+    "question": "I received an email stating my corporate account will be disabled unless I verify my password.",
+    "answer": "This is a classic phishing lure. IT never asks you to verify your password via email links. Report the email immediately (Sec 3.4).",
+    "policyId": "POL-003",
+    "category": "Phishing"
+  },
+  {
+    "id": "FAQ-011",
+    "question": "Someone called claiming to be from IT and asked for my one-time passcode (OTP). Should I provide it?",
+    "answer": "Never! IT staff will never ask for your MFA code or password over phone, email, or chat. This is a vishing attempt (Sec 3.5).",
+    "policyId": "POL-013",
+    "category": "Social Engineering"
+  },
+  {
+    "id": "FAQ-012",
+    "question": "Can I email company spreadsheets or documents to my personal Gmail to finish work at home?",
+    "answer": "No. Sending company data to personal accounts violates Data Classification (Sec 4.1) and Cloud Storage (Sec 4.5) policies because personal inboxes lack corporate DLP protections.",
+    "policyId": "POL-006",
+    "category": "Cloud Storage"
+  },
+  {
+    "id": "FAQ-013",
+    "question": "Can I upload customer lists or databases to my personal Google Drive or Dropbox?",
+    "answer": "Strictly prohibited. All corporate data must stay within the organization's approved tenant storage. Personal cloud accounts are unmonitored and violate customer NDAs (Sec 4.5).",
+    "policyId": "POL-006",
+    "category": "Cloud Storage"
+  },
+  {
+    "id": "FAQ-014",
+    "question": "Can I generate a public 'anyone with the link' share link for external contractors?",
+    "answer": "No. Public links allow unrestricted anonymous indexing. You must share files directly to the contractor's authenticated email with an expiration date (Sec 4.3).",
+    "policyId": "POL-005",
+    "category": "External File Sharing"
+  },
+  {
+    "id": "FAQ-015",
+    "question": "Can I paste company code or confidential reports into public ChatGPT or Claude?",
+    "answer": "No. Pasting confidential data or internal code into public AI tools exposes proprietary information to third-party model retraining and log retention (Sec 9.1).",
+    "policyId": "POL-019",
+    "category": "AI Tool Usage"
+  },
+  {
+    "id": "FAQ-016",
+    "question": "Can I install an AI browser extension or AI coding assistant on my work laptop?",
+    "answer": "Only if it is listed in the Corporate App Catalog or explicitly approved by InfoSec. Unvetted extensions can read your active session tokens and confidential web pages (Sec 9.1 & Sec 5.3).",
+    "policyId": "POL-019",
+    "category": "AI Tool Usage"
+  },
+  {
+    "id": "FAQ-017",
+    "question": "I found an unidentified USB flash drive in the office lobby. Can I plug it in to check the owner?",
+    "answer": "Never plug in found USB drives. Attackers deliberately drop infected flash drives in lobbies. Hand it directly to Security or IT Reception for analysis (Sec 5.1).",
+    "policyId": "POL-007",
+    "category": "USB Devices"
+  },
+  {
+    "id": "FAQ-018",
+    "question": "Can I use my personal USB thumb drive to move files between my home PC and work laptop?",
+    "answer": "No. Unencrypted personal USB devices can introduce malware or facilitate unauthorized data exfiltration. Endpoint ports are monitored (Sec 5.1).",
+    "policyId": "POL-007",
+    "category": "USB Devices"
+  },
+  {
+    "id": "FAQ-019",
+    "question": "Can I install a free online PDF converter or utility program from the internet?",
+    "answer": "No. Online converters often retain uploaded files on third-party servers, and unvetted software installers may bundle adware or trojans. Use IT-approved tools (Sec 5.3).",
+    "policyId": "POL-008",
+    "category": "Software Installation"
+  },
+  {
+    "id": "FAQ-020",
+    "question": "Is it safe to work on company emails from airport or hotel public Wi-Fi?",
+    "answer": "Public Wi-Fi is unencrypted and vulnerable to eavesdropping. You must connect to the corporate VPN before accessing any company email or internal resources (Sec 6.1).",
+    "policyId": "POL-009",
+    "category": "Public Wi-Fi"
+  },
+  {
+    "id": "FAQ-021",
+    "question": "Can my family members or children use my company laptop for homework or web browsing?",
+    "answer": "No. Corporate hardware is strictly for authorized employee use. Non-employees can accidentally download malware or access sensitive files (Sec 6.3).",
+    "policyId": "POL-010",
+    "category": "Remote Work"
+  },
+  {
+    "id": "FAQ-022",
+    "question": "What should I do immediately if I clicked a suspicious link and entered my company password?",
+    "answer": "Stop immediately. Disconnect from Wi-Fi/network, notify IT Security within 60 minutes, and reset your password from a clean device. Report the incident via NETRAK (Sec 1.2).",
+    "policyId": "POL-011",
+    "category": "Incident Reporting"
+  },
+  {
+    "id": "FAQ-023",
+    "question": "What should I do if my work laptop or phone is lost or stolen?",
+    "answer": "Report it immediately to the Security Operations Center so they can trigger remote lock and wipe commands to prevent physical data extraction (Sec 1.2 & Sec 7.1).",
+    "policyId": "POL-011",
+    "category": "Incident Reporting"
+  },
+  {
+    "id": "FAQ-024",
+    "question": "Can I use my personal mobile phone to read work emails?",
+    "answer": "Yes, provided the device enrolls in the corporate Mobile Device Management (MDM) profile, has a passcode, and is not jailbroken or rooted (Sec 7.1 & Sec 7.2).",
+    "policyId": "POL-016",
+    "category": "BYOD"
+  },
+  {
+    "id": "FAQ-025",
+    "question": "Can I discuss confidential project roadmaps in coffee shops or open coworking spaces?",
+    "answer": "No. Confidential information must not be discussed in public areas where competitors or strangers can easily overhear (Sec 4.2 & Sec 6.2).",
+    "policyId": "POL-027",
+    "category": "Confidential Information"
+  },
+  {
+    "id": "FAQ-026",
+    "question": "Can I upload company source code to my personal public GitHub repository?",
+    "answer": "Strictly prohibited. All company code belongs to the enterprise and must reside only in corporate private repositories (Sec 11.1).",
+    "policyId": "POL-024",
+    "category": "Source Code Security"
+  },
+  {
+    "id": "FAQ-027",
+    "question": "What should I do if I accidentally commit an API key or password to a Git repository?",
+    "answer": "Immediately revoke and rotate the secret, remove the commit from git history, and report the exposed credential to InfoSec via NETRAK (Sec 11.2).",
+    "policyId": "POL-028",
+    "category": "Secrets Management"
+  },
+  {
+    "id": "FAQ-028",
+    "question": "Can I scan a QR code sent in an unexpected email to complete a verification step?",
+    "answer": "Beware of 'quishing'. Attackers use QR codes to redirect you to phishing sites on your mobile phone, bypassing desktop security filters. Inspect the URL carefully (Sec 3.6).",
+    "policyId": "POL-029",
+    "category": "QR Code Security"
+  },
+  {
+    "id": "FAQ-029",
+    "question": "Can I use WhatsApp or Telegram for quick work discussions with clients?",
+    "answer": "No. Official business discussions must occur within approved corporate Slack or Microsoft Teams channels to ensure compliance, auditing, and data protection (Sec 4.4).",
+    "policyId": "POL-036",
+    "category": "Messaging Apps"
+  },
+  {
+    "id": "FAQ-030",
+    "question": "Can I grant third-party OAuth access to my Google or Microsoft work account for a free online calendar tool?",
+    "answer": "Only if approved by IT Security. Rogue OAuth apps can silently read your entire calendar, email, and files without requiring your password (Sec 11.3).",
+    "policyId": "POL-025",
+    "category": "Third-Party Applications"
+  },
+  {
+    "id": "FAQ-031",
+    "question": "Can I export customer records to an Excel file to test a script on my local computer?",
+    "answer": "No. Exporting production customer records to personal environments creates major privacy and compliance violations. Use anonymized synthetic test data (Sec 8.2).",
+    "policyId": "POL-026",
+    "category": "Customer Data"
+  },
+  {
+    "id": "FAQ-032",
+    "question": "What is the Clean Desk standard?",
+    "answer": "Clean Desk policy requires all physical documents, access cards, and removable media to be locked in secure cabinets whenever you leave your workspace unattended (Sec 10.1).",
+    "policyId": "POL-022",
+    "category": "Physical Security"
+  },
+  {
+    "id": "FAQ-033",
+    "question": "What should I do if someone follows me through the secure office door without badging in?",
+    "answer": "Politely ask them to badge in at the reader or direct them to reception. Report unbadged individuals to building security immediately (Sec 10.1).",
+    "policyId": "POL-022",
+    "category": "Physical Security"
+  },
+  {
+    "id": "FAQ-034",
+    "question": "What precautions should I take when taking my company laptop on international travel?",
+    "answer": "Notify IT Security 14 days before traveling. For high-risk regions, obtain a designated travel loaner laptop and leave your primary machine at home (Sec 6.5).",
+    "policyId": "POL-033",
+    "category": "Travel Security"
+  },
+  {
+    "id": "FAQ-035",
+    "question": "Can I throw printed papers containing internal notes into the normal office recycling bin?",
+    "answer": "No. All documents containing business information must be placed into locked, secure shredding consoles for certified destruction (Sec 10.2).",
+    "policyId": "POL-040",
+    "category": "Secure Disposal"
+  },
+  {
+    "id": "FAQ-036",
+    "question": "Can I share a Miro or Figma whiteboard with external users without requiring logins?",
+    "answer": "No. Whiteboards containing system designs or customer data must require authenticated logins. Never use anonymous public links (Sec 4.6).",
+    "policyId": "POL-037",
+    "category": "Collaboration Platforms"
+  },
+  {
+    "id": "FAQ-037",
+    "question": "Can I take screenshots of customer records or financial systems on my personal phone?",
+    "answer": "No. Taking photos or screenshots of confidential company data on personal devices circumvents security logging and access controls (Sec 8.1 & Sec 4.1).",
+    "policyId": "POL-018",
+    "category": "Data Privacy"
+  },
+  {
+    "id": "FAQ-038",
+    "question": "Can I install an unverified developer package or script from an unknown GitHub source?",
+    "answer": "Developer packages must be checked for typosquatting, verified against trusted package registries, and vetted by automated scanning tools before installation (Sec 11.1).",
+    "policyId": "POL-024",
+    "category": "Source Code Security"
+  },
+  {
+    "id": "FAQ-039",
+    "question": "Can I use private browsing (Incognito) mode to bypass company web safety filters?",
+    "answer": "No. Incognito mode only prevents local history saving; it does not encrypt your traffic or bypass enterprise security monitoring (Sec 5.4).",
+    "policyId": "POL-030",
+    "category": "Browser Security"
+  },
+  {
+    "id": "FAQ-040",
+    "question": "Can I keep old customer files on my laptop indefinitely in case I need them later?",
+    "answer": "No. Corporate Data Retention standards mandate regular purging of obsolete data to comply with privacy regulations and limit data breach exposure (Sec 8.3).",
+    "policyId": "POL-039",
+    "category": "Data Retention"
+  }
+]

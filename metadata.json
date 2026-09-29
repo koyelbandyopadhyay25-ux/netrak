@@ -1,0 +1,6 @@
+{
+  "name": "NETRAK — Security Awareness & Decision Platform",
+  "description": "Human-centric security decision platform combining deterministic security rules, policy grounding, selective AI guidance, just-in-time learning, and incident response.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

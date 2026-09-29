@@ -1,0 +1,37 @@
+[
+  {
+    "id": "AUD-1001",
+    "timestamp": "2026-09-27T18:43:00.000Z",
+    "action": "INCIDENT_CREATED",
+    "userId": "USR-001",
+    "details": "Incident INC-2026-0891 registered: Stripe API Key exposure."
+  },
+  {
+    "id": "AUD-1002",
+    "timestamp": "2026-09-27T17:20:00.000Z",
+    "action": "POLICY_SEARCH",
+    "userId": "USR-016",
+    "details": "Query: 'Can I upload customer database to personal Google Drive?' -> Matched POL-006 & POL-026"
+  },
+  {
+    "id": "AUD-1003",
+    "timestamp": "2026-09-27T15:10:00.000Z",
+    "action": "INCIDENT_STATUS_UPDATED",
+    "userId": "USR-008",
+    "details": "Incident INC-2026-0889 updated to UNDER_REVIEW by Sarah Lin."
+  },
+  {
+    "id": "AUD-1004",
+    "timestamp": "2026-09-27T12:00:00.000Z",
+    "action": "PHISHING_SIMULATION_ACTION",
+    "userId": "USR-016",
+    "details": "Simulation SIM-2026-02: User flagged and reported phishing drill."
+  },
+  {
+    "id": "AUD-1005",
+    "timestamp": "2026-09-27T10:05:00.000Z",
+    "action": "QUIZ_COMPLETED",
+    "userId": "USR-016",
+    "details": "Quiz topic: 'AI security'. Score: 50% (Recommended refresher)."
+  }
+]

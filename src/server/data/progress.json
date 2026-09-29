@@ -1,0 +1,102 @@
+{
+  "userId": "USR-016",
+  "userName": "Demo Employee",
+  "overallProgress": 72,
+  "lessonsCompleted": 12,
+  "totalLessons": 20,
+  "scenariosAttempted": 8,
+  "quizAttempts": 16,
+  "quizCorrect": 12,
+  "averageAccuracy": 75,
+  "topicStats": {
+    "phishing": {
+      "attempts": 5,
+      "correct": 2,
+      "score": 48,
+      "lessonsCompleted": 1,
+      "status": "needs_refresher"
+    },
+    "password security": {
+      "attempts": 6,
+      "correct": 6,
+      "score": 94,
+      "lessonsCompleted": 3,
+      "status": "proficient"
+    },
+    "data sharing": {
+      "attempts": 5,
+      "correct": 4,
+      "score": 88,
+      "lessonsCompleted": 2,
+      "status": "proficient"
+    },
+    "AI security": {
+      "attempts": 4,
+      "correct": 2,
+      "score": 61,
+      "lessonsCompleted": 1,
+      "status": "needs_refresher"
+    },
+    "MFA": {
+      "attempts": 4,
+      "correct": 3,
+      "score": 75,
+      "lessonsCompleted": 1,
+      "status": "proficient"
+    },
+    "incident response": {
+      "attempts": 5,
+      "correct": 3,
+      "score": 60,
+      "lessonsCompleted": 1,
+      "status": "needs_refresher"
+    },
+    "cloud security": {
+      "attempts": 4,
+      "correct": 3,
+      "score": 75,
+      "lessonsCompleted": 1,
+      "status": "proficient"
+    },
+    "public Wi-Fi": {
+      "attempts": 3,
+      "correct": 3,
+      "score": 100,
+      "lessonsCompleted": 1,
+      "status": "proficient"
+    },
+    "remote work": {
+      "attempts": 3,
+      "correct": 2,
+      "score": 67,
+      "lessonsCompleted": 1,
+      "status": "needs_refresher"
+    }
+  },
+  "history": [
+    {
+      "type": "quiz",
+      "topic": "phishing",
+      "question": "Spotting Phishing Red Flags",
+      "selectedAnswer": "Forward the email to all coworkers to warn them.",
+      "correct": false,
+      "timestamp": "2026-09-26T14:22:00.000Z"
+    },
+    {
+      "type": "quiz",
+      "topic": "password security",
+      "question": "Password Standards",
+      "selectedAnswer": "In the approved enterprise password manager.",
+      "correct": true,
+      "timestamp": "2026-09-26T16:10:00.000Z"
+    },
+    {
+      "type": "quiz",
+      "topic": "AI security",
+      "question": "Pasting customer data into free AI",
+      "selectedAnswer": "Yes, as long as you delete the chat history afterwards.",
+      "correct": false,
+      "timestamp": "2026-09-27T10:05:00.000Z"
+    }
+  ]
+}
