@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NETRAK — Your Security Awareness Copilot
 > **"Understand. Decide. Learn. Stay Secure."**
 > *An intelligent security decision platform combining deterministic security rules, organizational policy grounding, selective AI assistance, just-in-time micro-learning, incident escalation, and command center analytics.*
@@ -265,3 +266,6 @@ npm run build
 6. **Contained Simulation:** Phishing drills remain 100% simulated inside the app without sending external emails.
 #   n e t r a k  
  
+=======
+# netrak
+>>>>>>> origin/main
